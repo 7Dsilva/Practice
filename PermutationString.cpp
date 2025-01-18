@@ -3,7 +3,7 @@ using namespace std;
 
 // g++ -o PermutationString.exe PermutationString.cpp && ./PermutationString.exe
 
-// O(26*N)
+// O(26*N)  
 
 int main(){
     
@@ -23,17 +23,17 @@ int main(){
          int cur = 0;
 
          for(int j = i;j<s2.length();j++){
-            char c = s2[j];
+            char c = s2[j];   // count of c2
             c2[c]++;
 
-            if(c1[c] < c2[c]){
+            if(c1[c] < c2[c]){     
 
-                break;
+                break;          
             }
 
             if(c1[c] == c2[c]){
 
-                cur++;
+                cur++;      
             }
 
             if(cur == need){
