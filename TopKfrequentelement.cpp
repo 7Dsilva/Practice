@@ -5,6 +5,7 @@ using namespace std;
 
 //  g++ -o TopKfrequentelement.exe TopKfrequentelement.cpp && ./TopKfrequentelement.exe
 
+// {77,77,77,98,25};
 
 int main(){
 
@@ -21,15 +22,19 @@ int main(){
         rep[i]++;              
     }
 
-    vector<pair<int, int>> arr;
+    vector<pair<int, int>> arr;                         
 
     for(const auto& i : rep){
-        arr.push_back({i.second, i.first});      
+        arr.push_back({i.second, i.first}); 
+        cout<<i.second;                                                                            
+        cout<<i.first;
     }
 
-    sort(arr.rbegin(), arr.rend());     // reverse 
+
+
+    sort(arr.rbegin(), arr.rend());     
     
-        vector<int> res;
+    vector<int> res;
 
     for(int i=0;i<k;++i){
         res.push_back(arr[i].second);
@@ -38,7 +43,7 @@ int main(){
 
     for(const auto& j : res){
 
-        cout<<j<<" ";
+       // cout<<j<<" ";
     }
    
 

@@ -17,8 +17,8 @@ int main(){
     int r = n-1;
 
     while(l<r){
-        area = (r-l)*min(h[l], h[r]);
-        res = max(res, area);
+        area = (r-l)*min(h[l], h[r]);     // trick is to only use area 
+        res = max(res, area);    
         if(h[l] < h[r]){
             l++;
         }else {

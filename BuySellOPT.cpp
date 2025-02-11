@@ -4,8 +4,7 @@ using namespace std;
 
 //  g++ -o BuySellOPT.exe BuySellOPT.cpp && ./BuySellOPT.exe
 
-// Optimal ; we use two pointer approach which solves it n time  
-
+// Optimal ; we use two pointer approach which solves it n time   
 
 
 int main(){

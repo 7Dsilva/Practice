@@ -30,16 +30,11 @@ int main(){
     }
 
     for (int i = 0; i < n; i++) {
-        res[i] = pre[i] * pos[i]    ;
+        res[i] = pre[i] * pos[i];
         cout<<res[i];
     }
 
  
-
-
-
-
-
     return 0;
 }
 

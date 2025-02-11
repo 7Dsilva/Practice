@@ -27,13 +27,21 @@ int main(){
         }
 
         rep[key].push_back(s);              //push those char count to rep as key and match it with each string value
+for(const auto& s : strs){
 
+    int strlgth = s.length();
+     
+    string enc =  to_string(strlgth) + s + "#";
+
+    cout<<s;
+    
+}
     }
 
     vector<vector<string>> res;
 
     for(const auto& pair:rep){
-        res.push_back(pair.second);         //push.second because need chars 
+        res.push_back(pair.second);     
         
     }
 
